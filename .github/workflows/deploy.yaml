@@ -27,6 +27,7 @@ jobs:
         env:
             NODE_ENV: ci
             PORT: 3000
+            MONGODBURI: ${{ secrets.MONGODB_URI }}
 
         steps:
             - uses: actions/checkout@v2
