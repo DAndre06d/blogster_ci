@@ -5,7 +5,9 @@
     "main": "index.js",
     "type": "commonjs",
     "jest": {
-        "setupTestFrameworkScriptFile": "./test/setup.js"
+        "setupFilesAfterEnv": [
+            "<rootDir>/test/setup.js"
+        ]
     },
     "scripts": {
         "start": "node index.js",

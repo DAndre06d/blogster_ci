@@ -8,6 +8,7 @@ mongoose.connect(keys.mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
+jest.setTimeout(35000);
 
 afterAll(async () => {
     await mongoose.disconnect();
