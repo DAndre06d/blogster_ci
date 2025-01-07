@@ -27,10 +27,6 @@ jobs:
         env:
             NODE_ENV: ci
             PORT: 3000
-            GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-            GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-            MONGODBURI: ${{ secrets.MONGODBURI }}
-            COOKIE_KEY: ${{ secrets.COOKIE_KEY }}
 
         steps:
             - uses: actions/checkout@v2
