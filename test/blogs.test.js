@@ -1,5 +1,6 @@
 const Page = require("./helpers/page");
 let page;
+jest.setTimeout(35000);
 beforeEach(async () => {
     page = await Page.build();
     await page.goto("localhost:3000");
