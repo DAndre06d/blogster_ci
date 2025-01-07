@@ -9,7 +9,7 @@ require("./services/cache");
 require("./models/User");
 require("./models/Blog");
 require("./services/passport");
-
+require("dotenv").config();
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI, {
     useNewUrlParser: true,
